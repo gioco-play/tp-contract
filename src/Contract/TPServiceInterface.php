@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace GiocoPlus\TP\Contract;
 /**
- * 博樂棋牌
+ *
  */
 interface TPServiceInterface {
 
@@ -25,23 +25,5 @@ interface TPServiceInterface {
      * @return mixed
      */
     function gameDetail(string $op_code, string $account, string $bet_id);
-
-    /**
-     * 抓取遊戲紀錄
-     *
-     * @param string $op_code
-     * @param integer $past_minutes
-     * @param string $cache_key
-     * @return mixed
-     */
-    function betLogGrabber(string $op_code, int $past_minutes, string $cache_key);
-
-    /**
-     * 全營商 抓取遊戲紀錄
-     *
-     * @param integer $past_minutes
-     * @return mixed
-     */
-    function betLogGrabberAll(int $past_minutes);
 }
 
