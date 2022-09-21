@@ -43,5 +43,23 @@ interface TPServiceInterface {
      * @return mixed
      */
     function betLogGrabberAll(int $past_minutes);
+
+    /**
+     * 會員帳號轉換(GF->TP)
+     * @param string $op_code
+     * @param array $vendor
+     * @param string $member_code
+     * @return mixed
+     */
+    function aaccountToVendor(string $op_code, array $vendor, string $member_code);
+
+    /**
+     * 會員帳號轉換(TP->GF)
+     * @param string $op_code
+     * @param array $vendor
+     * @param string $vendor_account
+     * @return mixed
+     */
+    function accountToOperator(string $op_code, array $vendor, string $vendor_account);
 }
 
