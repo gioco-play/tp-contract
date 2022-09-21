@@ -51,7 +51,7 @@ interface TPServiceInterface {
      * @param string $member_code
      * @return mixed
      */
-    function aaccountToVendor(string $op_code, array $vendor, string $member_code);
+    function accountToVendor(string $op_code, array $vendor, string $member_code);
 
     /**
      * 會員帳號轉換(TP->GF)
